@@ -1,0 +1,23 @@
+/*Richard Spink feb 20*/ 
+h1{
+    
+    background-color: green;
+}
+footer{
+    background-color: green;
+}
+p,ul,li{
+    font-size: 20px;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color:purple;
+}
+a:hover{
+    color:crimson;
+}
+a:active{
+    color:aquamarine;
+}
