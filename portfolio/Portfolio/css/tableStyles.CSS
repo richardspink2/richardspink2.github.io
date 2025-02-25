@@ -1,0 +1,44 @@
+/*Richard Spink
+feb 25*/
+
+    table {
+        width: 80%;
+        border: 2px solid black;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
+        text-align: left;
+        background-color: magenta; /* Table background color */
+        color: black; /* Text color for better contrast */
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    caption{
+        color: teal;
+        font-size: 30px;
+    }
+
+    thead {
+        background-color: powderblue; /* Header background color */
+        color: black; /* Ensuring the text is readable */
+    }
+
+    caption {
+        
+        font-weight: bold;
+        padding: 10px;
+        color: teal;
+        font-size: 30px;
+    }
+
+    .year {
+        font-weight: bold;
+        text-align: center;
+        background-color: powderblue;
+    }
+tr:nth-child(even){
+    background:gold;
+}
