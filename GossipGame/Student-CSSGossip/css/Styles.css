@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-size: cover;
+    background-image: url("../image/abstractPic.jpg");
+}
+.fonts {
+    font-weight: bold; 
+    color: orange;
+    font-style: italic;
+    font-size: xx-large;
+    
+    
+}
+
+.colors {
+    color: red; 
+    font-weight: bold;
+}
+
+.backgrounds {
+    color: green; 
+    padding: 5px; 
+}
+
+.more {
+    background-color: pink;
+    color: blue; 
+}
+    
+
+
+h1 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+}
+
+
+nav {
+    width: 175px;
+    background-color: #E7DBF6;
+    float: left;
+}
+
+article {
+    margin-left: 175px;
+    background-color: white;
+    padding: 10px;
+}
+
+
+#outerwrapper {
+    width: 650px;
+    background-color: #E7DBF6;
+    margin-left: auto;
+    margin-right: auto;
+}
+article ul {
+    list-style-image: url(../image/peaceSign.png);
+  }
+
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
