@@ -32,12 +32,12 @@
 	}
 h1
 {
-	font: Arial;
+	font-family:'Trebuchet MS';
 	font-size: xx-large;
 }
 h2
 {
-	font:trebuchet;
+	font-family:Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
 	font-style: italic;
 
