@@ -1,34 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Info</title>
-    
+    <title>Contact Form</title>
+    <meta name="author" content="Richard" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your Name web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>  
             <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about.html">About</a> </li>
-                <li><a href="experience.html">Experience</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
-        </ul>
+            </ul>
         </nav>
     </header>
     <main>
         <h1>Contact Me</h1>
-        <p>My schooling will end in <strong>2027</strong> as it is a <strong>2-year program</strong>. You are welcome to reach out and contact me via email  </strong><strong><a href="mailto:wowbasher45@gmail.com">Email Me</a></strong>
-            or by phone <strong><a href="tel:661-319-6330">Call Me</a></strong> to discuss any <strong>professional opportunities</strong> or <strong>internships</strong> you may have to offer.</p>
-
-    </main>
-    <footer>
-        <hr>
         
-        <p>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-            <a href="https://www.github.com" target="_blank">GitHub</a>
-        </p>
-        <p>&copy; 2025 My Website</p>
-    </footer>
+            
+    </main>
+    <form action="mailto:richardspink@my.cwi.edu" enctype="text/plain" method="POST">
+        <fieldset>
+            <legend>How do I contact you?</legend>
+            <div>
+                <label for="compName">Company name:</label>
+                <input type="text" id="compName" name="compName" placeholder="Dilly Donuts" required><br>
+            </div>
+
+            <div>
+                <label for="contactName">Person to Contact:</label>
+                <input type="text" id="contactName" name="contactName" placeholder="sam/sally" required><br>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Dogs@gmail.com" required><br>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <div class="opportunity-group">
+                <label for="opportunities">Type of Position:</label>
+                <select id="opportunities" name="opportunities">
+                    <option value="internship">Internship</option>
+                    <option value="fulltime">Full-Time Position</option>
+                    <option value="contract">Contract Work</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="Temporary">Temporary</option>
+                    <option value="On-Call">On-Call</option>
+                </select>
+            </div>
+
+            <div class="radio-group">
+                <p style="margin: 0; white-space: nowrap;">How Did You Find Me:<br></p>
+                <p><input type="radio" id="LinkedIn" name="website" value="LinkedIn">
+                <label for="LinkedIn">LinkedIn</label>
+                <input type="radio" id="Job Fair" name="website" value="Job Fair">
+                <label for="Job Fair">Job Fair</label>
+                <input type="radio" id="CWI Corporate Partner" name="website" value="CWI corporate Partner">
+                <label for="CWI Corporate Partner">CWI Corporate Partner</label></p>
+            </div>
+        </fieldset>
+        <label for="questions">Questions:</label>
+        <textarea id="Questions" name="Questions" rows="10" cols="100">Enter your question here.</textarea>
+
+        <input type="submit" id="submit" value="Submit" class="btn">
+    </form>
 </body>
+<footer>
+    <p>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="Image/LinkedIn.png" alt="LinkedIn">
+        </a> |
+        <a href="https://www.github.com" target="_blank">
+            <img src="Image/GitHub.png" alt="GitHub">
+        </a>
+    </p>
+    <p>&copy; 2025 My Website</p>
+    </footer>
 </html>
