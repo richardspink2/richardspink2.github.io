@@ -17,17 +17,17 @@
 
             <div>
                 <label for="compName">Company name:</label>
-                <input type="text" id="compName" name="compName" required><br>
+                <input type="text" id="compName" name="compName" placeholder="Dilly Donuts" required><br>
             </div>
 
             <div>
                 <label for="contactName">Person to Contact:</label>
-                <input type="text" id="contactName" name="contactName" required><br>
+                <input type="text" id="contactName" name="contactName" placeholder="sam/sally" required><br>
             </div>
 
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" placeholder="Dogs@gmail.com" required> <br>
             </div>
 
             <div>
@@ -40,32 +40,37 @@
         <fieldset>
             <legend>What opportunities are available at your company?</legend>
 
-            <div>
-                <label for="opportunities">Type of position:</label>
-                <select id="opportunities" name="opportunities">
-                    <option value="internship">Internship</option>
-                    <option value="fulltime">Full-Time Position</option>
-                    <option value="contract">Contract Work</option>
-                    <option value="part-time">Part-Time</option>
-                    <option value="Temporary">Temporary</option>
-                    <option value="On-Call">On-Call</option>
-                </select><br>
-            </div>
+            <div class="opportunity-group">
+        <label for="opportunities">Type of Position:</label>
+        <select id="opportunities" name="opportunities">
+            <option value="internship">Internship</option>
+            <option value="fulltime">Full-Time Position</option>
+            <option value="contract">Contract Work</option>
+            <option value="part-time">Part-Time</option>
+            <option value="Temporary">Temporary</option>
+            <option value="On-Call">On-Call</option>
+        </select>
+    </div>
 
-            <div>
-                <p>Are you hiring now?</p>
-                <input type="radio" id="yes" name="hiring" value="yes">
-                <label for="yes">Yes</label>
-
-                <input type="radio" id="no" name="hiring" value="no">
-                <label for="no">No</label>
+            <div class="radio-group">
+                <p style="margin: 0; white-space: nowrap;">How Did You Find Me:<br></p>
+            
+                <p><input type="radio" id="LinkedIn" name="website" value="LinkedIn">
+                <label for="LinkedIn">LinkedIn</label>
+            
+                <input type="radio" id="Job Fair" name="website" value="Job Fair">
+                <label for="Job Fair">Job Fair</label>
+            
+                <input type="radio" id="CWI Corporate Partner" name="website" value="CWI corporate Partner">
+                <label for="CWI Corporate Partner">CWI Corporate Partner</label></p>
             </div>
-
-            <div>
-                <label for="comments">Additional Comments:</label><br>
-                <textarea id="comments" name="comments" cols="100" rows="10"></textarea>
-            </div>
+           
         </fieldset>
+        <label for="questions">Questions:</label>
+
+<textarea id="Questions" name="Questions" rows="10" cols="100">
+Enter your question here.
+</textarea>
 
         <input type="submit" id="submit" value="Submit" class="btn">
     </form>
