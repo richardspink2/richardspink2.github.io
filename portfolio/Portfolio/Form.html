@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+    <meta name="author" content="Richard" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your Name web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <form action="mailto:richardspink@my.cwi.edu" enctype="text/plain" method="POST">
+        <fieldset>
+            <legend>How do I contact you?</legend>
+
+            <div>
+                <label for="compName">Company name:</label>
+                <input type="text" id="compName" name="compName" required><br>
+            </div>
+
+            <div>
+                <label for="contactName">Person to Contact:</label>
+                <input type="text" id="contactName" name="contactName" required><br>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                       placeholder="123-456-7890" required><br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+
+            <div>
+                <label for="opportunities">Type of position:</label>
+                <select id="opportunities" name="opportunities">
+                    <option value="internship">Internship</option>
+                    <option value="fulltime">Full-Time Position</option>
+                    <option value="contract">Contract Work</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="Temporary">Temporary</option>
+                    <option value="On-Call">On-Call</option>
+                </select><br>
+            </div>
+
+            <div>
+                <p>Are you hiring now?</p>
+                <input type="radio" id="yes" name="hiring" value="yes">
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="hiring" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" cols="100" rows="10"></textarea>
+            </div>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit" class="btn">
+    </form>
+</body>
+</html>
