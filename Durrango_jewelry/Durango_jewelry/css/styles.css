@@ -1,0 +1,72 @@
+
+/*Richard Spink 4/1/2025 */
+
+
+
+	 
+#outerwrapper {	
+	border-radius: 15%;
+	width: 70%;
+	margin: 0 auto;
+	background: rgba(243,205,170, 0.4);
+}
+html {
+    background-image: url(../images/jewelry.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+footer{
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+main {
+    background: linear-gradient(#FFFFFF, #F0F9E6);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 2em;
+    font-size: 1.25em;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.addrightmargin {
+    margin-right: 20px; 
+	
+	margin-right: 10%;  
+	
+}
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+nav li {
+    font-size: 1.5em; 
+}
+
+nav {
+    clear: both; 
+}
+.pacifico-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+}
+img{
+	float: left;
+	border-radius: 6em;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Italic.woff2') format('woff2'),
+         url('fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
