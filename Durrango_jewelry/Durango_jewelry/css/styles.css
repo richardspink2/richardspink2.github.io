@@ -1,6 +1,11 @@
 
 /*Richard Spink 4/1/2025 */
-
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+         url('../fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
 
 
 	 
@@ -56,13 +61,6 @@ img{
 
 
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
-         url('../fonts/Roboto-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
 
 h1 {
     font-family: 'Pacifico', Georgia, serif;
