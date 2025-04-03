@@ -47,26 +47,29 @@ nav li {
 nav {
     clear: both; 
 }
-.pacifico-text {
-    font-family: 'Pacifico', cursive;
-    font-size: 4em;
-}
+
+
 img{
 	float: left;
 	border-radius: 6em;
 }
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
-         url('fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
 
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Italic.woff2') format('woff2'),
-         url('fonts/Roboto-Italic.woff') format('woff');
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+         url('../fonts/Roboto-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+}
+
+h1 {
+    font-family: 'Pacifico', Georgia, serif;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 2em;
 }
