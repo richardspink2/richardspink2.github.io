@@ -1,11 +1,11 @@
 
 /*Richard Spink 4/1/2025 */
 @font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-BlackItalic-webfont.woff') format('woff');
-         
+    font-family: 'robotoblack_italic';
+    src: url('../fonts/Roboto-BlackItalic-webfont.woff');
     font-weight: normal;
-    font-style: italic;
+   
+
 }
 
 
@@ -69,6 +69,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'robotoblack_italic', Arial, sans-serif;
     font-size: 2em;
 }
