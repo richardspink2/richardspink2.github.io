@@ -8,7 +8,7 @@ feb 25*/
         margin-right: 10%;
         font-size: 18px;
         text-align: left;
-        background-color: magenta; /* Table background color */
+        background-color: rgb(101, 116, 180); /* Table background color */
         color: black; /* Text color for better contrast */
     }
 
@@ -22,7 +22,7 @@ feb 25*/
     }
 
     thead {
-        background-color: powderblue; /* Header background color */
+        background-color: rgb(255, 255, 255); /* Header background color */
         color: black; /* Ensuring the text is readable */
     }
 
@@ -40,5 +40,5 @@ feb 25*/
         background-color: powderblue;
     }
 tr:nth-child(even){
-    background:gold;
+    background:rgb(255, 255, 255);
 }
