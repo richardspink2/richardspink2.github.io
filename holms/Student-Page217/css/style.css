@@ -1,0 +1,12 @@
+body {
+    background-color: #FF0000;
+    color: #FFFFFF
+  }
+  
+  
+  @media (min-width: 600px) {
+    body {
+      background: #0000FF;
+    }
+  }
+
