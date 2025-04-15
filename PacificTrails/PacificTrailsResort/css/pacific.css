@@ -1,0 +1,126 @@
+/* Richard Spink */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  header {
+	background-color: #000033;
+	color: white;
+	padding: 1em;
+	background-image: url('../Images/sunset.jpg'); 
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: cover;
+  }
+  
+  h1 {
+	font-size: 2em;
+	margin: 0;
+	
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(175, 198, 248);
+	text-align: left;
+  }
+  .highlight {
+	color: #66ccff; /* light blue */
+	font-weight: bold;
+  }
+  
+  nav ul li {
+	display: block;
+	margin: 0.5em;
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	color: #0000ee;
+	font-weight: bold;
+  }
+  
+  main {
+	padding: 1em;
+  }
+  
+  h2 {
+	display: none;
+	color: #1d73aa;
+  }
+  
+  img {
+	display: none;
+	max-width: 100%;
+	height: auto;
+  }
+  
+  ul {
+	list-style-image: url('../Images/marker.gif'); /* or a fitting marker */
+	margin-left: 20px;
+  }
+  
+  footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(to top, rgba(144,199,227,1), rgba(255,255,255,1));
+	text-align: center;
+	padding: 0.5rem 0;
+	font-size: 0.9em;
+	box-sizing: border-box;
+	font-style: italic;
+  }
+  
+  /* Prevent content from being hidden under fixed footer */
+  body {
+	margin: 0;
+	padding-bottom: 3rem;
+  }
+  
+  
+  
+  
+	
+  
+  
+  
+  
+  /* ---------- TABLET BREAKPOINT ---------- */
+  @media (min-width: 641px) {
+	h2 {
+	  display: block;
+	}
+  
+	img {
+	  display: block;
+	}
+  
+	nav ul {
+	  text-align: left;
+	}
+  
+	nav ul li {
+	  display: inline;
+	  margin-right: 1em;
+	}
+  
+	nav ul li:last-child {
+	  margin-right: 0;
+	}
+	footer {
+		position: static;
+		margin: 2rem auto 0 auto;
+		width: 100%;
+		text-align: center;
+	  }
+	
+	  body {
+		padding-bottom: 0;
+	  }
+  }
