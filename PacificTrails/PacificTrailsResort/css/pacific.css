@@ -29,7 +29,7 @@ body {
 	text-align: left;
   }
   .highlight {
-	color: #66ccff; /* light blue */
+	color: #66ccff; 
 	font-weight: bold;
   }
   
@@ -60,7 +60,7 @@ body {
   }
   
   ul {
-	list-style-image: url('../Images/marker.gif'); /* or a fitting marker */
+	list-style-image: url('../Images/marker.gif'); 
 	margin-left: 20px;
   }
   
@@ -77,7 +77,7 @@ body {
 	font-style: italic;
   }
   
-  /* Prevent content from being hidden under fixed footer */
+  
   body {
 	margin: 0;
 	padding-bottom: 3rem;
