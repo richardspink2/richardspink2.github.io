@@ -8,10 +8,12 @@
 <link href="tips.css" rel="stylesheet"/>
 </head>
 <body>
-<audio autoplay="" loop="">
+<audio autoplay="" id="background-music" loop="">
 <source src="Old RuneScape Soundtrack_ Scape Main.mp3" type="audio/mpeg"/>
-  Your browser does not support the audio element.
-</audio>
+          Your browser does not support the audio element.
+        </audio>
+
+
 <header>
 <h1>RuneScape Guidebook</h1>
 <p class="subtitle">Old School RuneScape: Tips &amp; Tricks</p>
@@ -92,10 +94,11 @@
 <p>© 2025 RuneScape Guidebook. Not affiliated with Jagex Ltd.</p>
 </footer>
 
+
 <script>
   const music = document.getElementById('background-music');
   if (music) {
-    music.volume = 0.5;
+    music.volume = 0.1;
 
     window.addEventListener('beforeunload', () => {
       localStorage.setItem('musicTime', music.currentTime);
