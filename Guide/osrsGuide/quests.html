@@ -39,5 +39,30 @@
 <footer>
 <p>© 2025 The Guide to Gielinor. Not affiliated with Jagex Ltd.</p>
 </footer>
+
+<script>
+  const music = document.getElementById('background-music');
+  if (music) {
+    music.volume = 0.5;
+
+    window.addEventListener('beforeunload', () => {
+      localStorage.setItem('musicTime', music.currentTime);
+    });
+
+    window.addEventListener('load', () => {
+      const savedTime = localStorage.getItem('musicTime');
+      if (savedTime !== null) {
+        music.currentTime = parseFloat(savedTime);
+      }
+    });
+
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+      iframe.addEventListener('mouseover', () => {
+        music.pause();
+      });
+    });
+  }
+</script>
 </body>
 </html>
