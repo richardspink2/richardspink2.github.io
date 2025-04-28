@@ -12,8 +12,6 @@
 <source src="Old RuneScape Soundtrack_ Scape Main.mp3" type="audio/mpeg"/>
           Your browser does not support the audio element.
         </audio>
-
-
 <header>
 <h1>RuneScape Guidebook</h1>
 <p class="subtitle">Old School RuneScape: Tips &amp; Tricks</p>
@@ -98,17 +96,23 @@
 <script>
   const music = document.getElementById('background-music');
   if (music) {
-    music.volume = 0.5;
-
-    window.addEventListener('beforeunload', () => {
-      localStorage.setItem('musicTime', music.currentTime);
-    });
+    music.volume = 0.1;
 
     window.addEventListener('load', () => {
       const savedTime = localStorage.getItem('musicTime');
       if (savedTime !== null) {
         music.currentTime = parseFloat(savedTime);
       }
+      music.play().catch(error => {
+        console.log('Autoplay prevented. Waiting for user interaction.');
+        document.addEventListener('click', () => {
+          music.play();
+        }, { once: true });
+      });
+    });
+
+    window.addEventListener('beforeunload', () => {
+      localStorage.setItem('musicTime', music.currentTime);
     });
 
     const iframes = document.querySelectorAll('iframe');
