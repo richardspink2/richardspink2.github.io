@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>RuneScape Guide to Gielinor</title>
+<link href="tips.css" rel="stylesheet"/>
+  <link href="osrs-theme.css" rel="stylesheet"/>
+</head>
+<body>
+  <audio id="background-music" loop src="scapemain.mp3"></audio><audio autoplay="" id="background-music" loop="" muted="">
+<source src="Old RuneScape Soundtrack_ Scape Main.mp3" type="audio/mpeg"/>
+          Your browser does not support the audio element.
+        </audio><header>
+<h1>The Guide to Gielinor</h1>
+<p class="subtitle">Boss Hunting</p>
+<nav>
+<a href="index.html">Home</a>
+<a href="skills.html">Skills</a>
+<a href="quests.html">Quests</a>
+<a href="items.html">Items</a>
+<a class="active" href="bosses.html">Bosses</a>
+<a href="tips.html">Tips &amp; Tricks</a>
+  </nav>
+</header>
+<div class="boss-banner">
+<img src="https://oldschool.runescape.wiki/Special:FilePath/Zalcano.png" alt="Zalcano" title="Zalcano" class="banner-icon"/>
+<img src="https://oldschool.runescape.wiki/Special:FilePath/Kree%27arra.png" alt="Kree'arra" title="Kree'arra" class="banner-icon"/>
+<img src="https://oldschool.runescape.wiki/Special:FilePath/Vorkath.png" alt="Vorkath" title="Vorkath" class="banner-icon"/>
+<img src="https://oldschool.runescape.wiki/Special:FilePath/Chaos_Fanatic.png" alt="Chaos Fanatic" title="Chaos Fanatic" class="banner-icon"/>
+</div>
+<main>
+  <section>
+    <h2>Top 10 Money-Making Bosses</h2>
+    <ul class="boss-list">
+      <li>
+        
+        <strong>Theatre of Blood</strong>
+      </li>
+      <li>
+        
+        <strong>Chambers of Xeric (Raid 1)</strong>
+      </li>
+      <li>
+        
+        <strong>Zulrah</strong>
+      </li>
+      <li>
+        
+        <strong>Corrupted Gauntlet</strong>
+      </li>
+      <li>
+        
+        <strong>Demonic Gorilla</strong>
+      </li>
+      <li>
+        
+        <strong>Alchemical Hydra</strong>
+      </li>
+      <li>
+        
+        <strong>Zalcano</strong>
+      </li>
+      <li>
+        
+        <strong>Kree'arra</strong>
+      </li>
+      <li>
+        
+        <strong>Vorkath</strong>
+      </li>
+      <li>
+        
+        <strong>Dagannoth Kings</strong>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Top 5 Low-Level Money-Making Bosses</h2>
+    <ul class="boss-list">
+      <li>
+        
+        <strong>Barrows Brothers</strong>
+      </li>
+      <li>
+        
+        <strong>Giant Mole</strong>
+      </li>
+      <li>
+        
+        <strong>King Black Dragon</strong>
+      </li>
+      <li>
+        
+        <strong>Dagannoth Kings</strong>
+      </li>
+      <li>
+        
+        <strong>Chaos Fanatic</strong>
+      </li>
+    </ul>
+  </section>
+</main>
+<footer>
+<p>© 2025 The Guide to Gielinor. Not affiliated with Jagex Ltd.</p>
+</footer>
+
+
+<script>
+const music = document.getElementById('background-music');
+if (music) {
+  music.volume = 0.1;
+
+  window.addEventListener('load', () => {
+    const savedTime = localStorage.getItem('musicTime');
+    if (savedTime !== null) {
+      music.currentTime = parseFloat(savedTime);
+    }
+    music.play().then(() => {
+      music.muted = false;
+    }).catch(error => {
+      console.log('Autoplay prevented. Waiting for user interaction.');
+      document.addEventListener('click', () => {
+        music.play();
+        music.muted = false;
+      }, { once: true });
+    });
+  });
+
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem('musicTime', music.currentTime);
+  });
+
+  const iframes = document.querySelectorAll('iframe');
+  iframes.forEach(iframe => {
+    iframe.addEventListener('mouseover', () => {
+      music.pause();
+    });
+  });
+}
+</script>
+
+    </div>
+      <script src="music.js"></script>
+</body>
+</html>

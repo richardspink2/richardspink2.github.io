@@ -1,0 +1,81 @@
+
+/* ── RuneScape Font & Stone Background ───────────────────────────────────── */
+@font-face {
+  font-family: 'Morpheus';
+  src: url('fonts/Morpheus.ttf') format('truetype');
+}
+
+
+/* ── Global “Game Window” Panels ─────────────────────────────────────────── */
+.osrs-window {
+  border: 8px solid #4A4A4A;
+  border-image: url('ui-frame.png') 16 fill stretch;
+  box-shadow: inset 0 0 5px #000, 0 0 5px rgba(0,0,0,0.5);
+  background: #1A1A1A;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 960px;
+}
+
+/* ── Banner ───────────────────────────────────────────────────────────────── */
+.osrs-banner {
+  background-image: url('loginscreen.gif');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+/* ── Skill Icons ──────────────────────────────────────────────────────────── */
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skill-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+/* ── Tooltips & XP Bars ───────────────────────────────────────────────────── */
+.tooltip { position: relative; cursor: help; }
+.tooltip:hover::after {
+  content: attr(data-tip);
+  position: absolute; bottom: 100%; left: 50%;
+  transform: translateX(-50%);
+  background: #000; color: #fff;
+  padding: 4px 6px; border-radius: 4px;
+  white-space: nowrap;
+}
+.xp-bar {
+  width: 100%; height: 8px;
+  background: #2b2b2b; border: 1px solid #000;
+  margin: .5rem 0;
+}
+.xp-bar .fill {
+  height:100%; background: #d7af5f;
+  width: 45%;
+}
+
+/* Restored Lumbridge background image */
+body {
+  background: url('A_pixel_art_landscape_from_Old_School_RuneScape_de.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Lumbridge background */
+body {
+  background: url('A_pixel_art_landscape_from_Old_School_RuneScape_de.png') no-repeat center center fixed;
+  background-size: cover;
+}
+/* Sticky footer */
+html, body { height:100%; margin:0; }
+body { display:flex; flex-direction:column; min-height:100vh; }
+footer { margin-top:auto; }
